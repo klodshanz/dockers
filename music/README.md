@@ -24,3 +24,8 @@ Extract mp3 from youtube video:
 ```bash
 youtube-dl --extract-audio --audio-format --output "/output/%(title)s.%(ext)s" mp3 https://www.youtube.com/watch?v=WkPTHlJwZnE
 ```
+
+Set Title and Artist for the generated mp3 file:
+```bash
+id3tool --set-title="To Be Or Not To Be"  --set-artist="Mel Brooks" <mp3-file>
+```
