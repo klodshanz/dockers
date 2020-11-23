@@ -10,17 +10,18 @@
 # Tools
 
 * [youtube-dl](https://ytdl-org.github.io/youtube-dl/download.html)
-* [id3tool](http://nekohako.xware.cx/id3tool/) 
+* [mutagen](https://mutagen.readthedocs.io/en/latest/)
 * [ffmpeg](https://ffmpeg.org/)
 
 # Extract MP3 from YouTube video
 
 ```bash
-youtube-dl --extract-audio --audio-format mp3 --output /output/<mp3-file.mp3> <video URL>
+youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --output /output/ <youtube-url>
 ```
 
-# Change the MP3 ID Meta Data
+# Change the MP3 Tags
 
 ```bash
-id3tool --set-title="To Be Or Not To Be"  --set-artist="Mel Brooks" /output/<mp3-file.mp3>
+mid3v2 --song="To Be Or Not To Be" --artist="Mel Brooks" <mp3-file.mp3>
+mid3v2 <mp3-file.mp3>
 ```
