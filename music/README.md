@@ -16,7 +16,7 @@
 # Extract MP3 from YouTube video
 
 ```bash
-youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 --output /output/ <youtube-url>
+youtube-dl -f bestaudio --extract-audio --audio-format mp3 --audio-quality 0 <youtube-url>
 ```
 
 # Change the MP3 Tags
