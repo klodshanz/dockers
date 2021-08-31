@@ -10,6 +10,7 @@
 # Tools
 
 * [youtube-dl](https://ytdl-org.github.io/youtube-dl/download.html)
+* [mid3v2](http://manpages.ubuntu.com/manpages/trusty/man1/mid3v2.1.html)
 * [mutagen](https://mutagen.readthedocs.io/en/latest/)
 * [ffmpeg](https://ffmpeg.org/)
 
