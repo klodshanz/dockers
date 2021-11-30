@@ -1,6 +1,5 @@
 build:
-	docker build --tag music .
-run:
-	docker run --user claus --interactive --tty -v $(pwd)/output:/output:Z music
-in:
-	docker exec --user claus --workdir /home/claus/ansible --interactive --tty control bash
+	@docker build --tag music .
+
+up:
+	@docker run --interactive --tty  -e "TERM=xterm-256color" --volume /home/claus/dockers/music/output:/output:Z music

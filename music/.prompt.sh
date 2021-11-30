@@ -35,6 +35,6 @@ function build {
 
 function make_prompt {
 	CURRENT_DIR="../$(basename $(pwd))"
-	PS1="$(build DOCKERS docs $CURRENT_DIR)"
+	PS1="$(build DOCKERS music $CURRENT_DIR)"
 }
 PROMPT_COMMAND="make_prompt; $PROMPT_COMMAND"
